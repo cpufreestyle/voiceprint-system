@@ -1,0 +1,13 @@
+# VoicePrint System Dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+speechbrain>=1.0.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+soundfile>=0.12.0
+numpy>=1.24.0
+scipy>=1.10.0
+PyYAML>=6.0
+pydantic>=2.0.0
+httpx>=0.24.0

@@ -1,0 +1,18 @@
+services:
+  voiceprint-server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8700:8700"
+    volumes:
+      - voiceprint-models:/app/models
+      - voiceprint-data:/app/data
+    environment:
+      - VP_HOST=0.0.0.0
+      - VP_PORT=8700
+    restart: unless-stopped
+
+volumes:
+  voiceprint-models:
+  voiceprint-data:
